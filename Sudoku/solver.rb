@@ -33,9 +33,9 @@ class Solver
         until board.solved?
             self.all_tiles_value_finder
             self.single_value_finder
-            #self.single_value_column
+            self.single_value_column
             self.single_value_row
-            #self.single_value_square
+            self.single_value_square
         end
         @board.render
     end
