@@ -17,7 +17,7 @@ class Solver
     end
 
 
-    def possible_values_finder(position) ### WRONGGG ME VA A SUMAR LOS QUE NO EDSTAN EN OTROS
+    def possible_values_finder(position) 
         possible = possible_values_column(position) + possible_values_row(position) + possible_values_square(position)
         possible.map! do |ele| 
             if possible.count(ele) == 3
